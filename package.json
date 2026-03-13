@@ -1,0 +1,12 @@
+{
+  "name": "ml-snake-demo",
+  "version": "1.0.0",
+  "description": "Simple Snake game with heuristic AI and Playwright test",
+  "private": true,
+  "scripts": {
+    "test:play": "node tests/play.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.38.0"
+  }
+}
