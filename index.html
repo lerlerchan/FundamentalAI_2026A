@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ML-ish Snake Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Snake — ML Demo</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+      <label><input type="checkbox" id="aiToggle"> AI</label>
+      <label>Speed: <select id="speedSelect"><option value="120">Normal</option><option value="80">Fast</option><option value="40">Very Fast</option></select></label>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    <p class="hint">Controls: Arrow keys or WASD. Toggle AI to let a simple heuristic control the snake.</p>
+  </div>
+
+  <script src="ai.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
